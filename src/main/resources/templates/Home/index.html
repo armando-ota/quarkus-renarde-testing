@@ -1,6 +1,9 @@
 {#include main.html }
     {#title}Home{/title}
-
-    just checking if includes work
-
+    <div>
+    {#for tplName in names}
+        <div>{tplName}</div>
+        <div>{#include tplName /}</div>
+    {/for}
+    </div>
 {/include}
